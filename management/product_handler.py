@@ -13,3 +13,13 @@ def get_products_by_type(type):
         if product["type"] == type:
             array.append(product)
     return array
+
+
+def add_product(menu, *args):
+    new_id = 0
+    new_id = max([product["_id"] + 1 for product in menu if product["_id"] > new_id])
+    for product in args:
+        product["_id"] = new_id
+        new_id += 1
+        menu.append(product)
+    return product
