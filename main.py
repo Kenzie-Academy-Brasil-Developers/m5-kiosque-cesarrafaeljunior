@@ -4,15 +4,17 @@ from menu import products
 
 
 if __name__ == "__main__":
+    pass
     # try:
     #     print(get_product_by_id("28"))
     # except TypeError as error:
     #     print(f"Error: {error}")
 
     # try:
-    #     print(get_products_by_type('drink'))
+    #     print(get_products_by_type('legumes'))
     # except TypeError as error:
     #     print(f"Error: {error}")
+
     # new_product = {
     #     "title": "X-Python",
     #     "price": 5.0,
@@ -20,14 +22,7 @@ if __name__ == "__main__":
     #     "description": "Sanduiche de Python",
     #     "type": "fast-food",
     # }
-    # other_product = {
-    #     "title": "X-Python2",
-    #     "price": 5.0,
-    #     "rating": 5,
-    #     "description": "Sanduiche de Python",
-    #     "type": "fast-food"
-    # }
-    # print(add_product(products, new_product, other_product))
+    # print(add_product([], **new_product))
 
     # table_1 = [{"_id": 1, "amount": 5}, {"_id": 19, "amount": 5}]
     # table_2 = [
@@ -37,4 +32,4 @@ if __name__ == "__main__":
     # ]
 
     # print(calculate_tab(table_2))
-    print(menu_report())
+    # print(menu_report())
