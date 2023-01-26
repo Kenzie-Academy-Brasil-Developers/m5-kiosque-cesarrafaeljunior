@@ -4,16 +4,17 @@ from menu import products
 
 
 if __name__ == "__main__":
+    pass
 
     # try:
     #     print(get_product_by_id(28))
     # except TypeError as error:
     #     print(f"Error: {error}")
 
-    try:
-        print(get_products_by_type('drink'))
-    except TypeError as error:
-        print(f"Error: {error}")
+    # try:
+    #     print(get_products_by_type('drink'))
+    # except TypeError as error:
+    #     print(f"Error: {error}")
 
     # new_product = {
     #     "title": "X-Python",

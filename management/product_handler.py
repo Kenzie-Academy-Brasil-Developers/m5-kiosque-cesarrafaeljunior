@@ -19,15 +19,12 @@ def get_products_by_type(type_product):
     if type(type_product) != str:
         raise TypeError("product type must be a str")
 
-    found_product_for_type = [product for product in products if product["type"] == type_product]
+    found_product_by_type = [product for product in products if product["type"] == type_product]
 
-    if found_product_for_type:
-        return found_product_for_type
+    if found_product_by_type:
+        return found_product_by_type
     else:
         return []
-
-    products_filter = [product for product in products if product["type"] == type_product]
-    return products_filter
 
 
 def add_product(menu, **kwargs):
