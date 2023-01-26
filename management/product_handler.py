@@ -8,12 +8,11 @@ def get_product_by_id(id):
 
     found_id = [product for product in products if product["_id"] == id]
 
-    if not found_id:
+    if found_id:
+        product, = found_id
+        return product
+    else:
         return {}
-
-    for product in products:
-        if product["_id"] == id:
-            return product
 
 
 def get_products_by_type(type_product):
@@ -22,7 +21,9 @@ def get_products_by_type(type_product):
 
     found_product_for_type = [product for product in products if product["type"] == type_product]
 
-    if not found_product_for_type:
+    if found_product_for_type:
+        return found_product_for_type
+    else:
         return []
 
     products_filter = [product for product in products if product["type"] == type_product]
